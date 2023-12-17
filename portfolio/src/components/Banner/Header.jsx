@@ -21,15 +21,12 @@ const Header = () => {
         onClick={() => setBar(!bar)}
         className="bars">
             <div className="bar"></div>
-            
         </div>
     </Container>
   )
 }
 
 export default Header
-
-//problemes sur l'affichage du bouton et pas de surbrillance sur les différentes parties de la navbar
 
 const Container = styled.div`
     display: flex;

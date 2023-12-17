@@ -31,8 +31,8 @@ const ProfComponent = () => {
             </Social>
             </Texts>
             <Profile>
-                {/*  problème pour charger l'image*/}
-               <img src="portfolio/public/CTK_portrait.jpg" alt="profile" />
+                
+               <img src="portrait_TK.jpg" alt="profile" /> 
             </Profile>
         </Container>
 
@@ -42,16 +42,22 @@ const ProfComponent = () => {
 }
 
 export default ProfComponent;
-
+{/*  problème lorsqu'on laisse la souris sur le bouton*/}
 const Container = styled.div`
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  z-index: 1;
+  @media (max-width: 840px) {
+    width: 90%;
+  }
 
-    display: flex;
-    gap: 2rem;
-    padding: 3rem;
-    width: 1200px;
-    max-width: 1280px;
-    margin: 0 auto;
-
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 `;
 const Texts = styled.div`
   flex: 1;
@@ -88,15 +94,16 @@ const Texts = styled.div`
     }
   }
 `;
-
 const Social = styled.div`
   margin-top: 3rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-
-  p{
-    font-size : 0.9rem;
+  p {
+    font-size: 0.9rem;
+    @media (max-width: 690px) {
+      font-size: 0.7rem;
+    }
   }
 
   .social-icons {
@@ -125,16 +132,24 @@ const Social = styled.div`
   }
 `;
 const Profile = styled.div`
-
-  img{
+  img {
     width: 25rem;
-    filter: drop-shadow(0px 10px 10px #01be9551);
+    filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
+    @media (max-width: 790px) {
+      width: 20rem;
+    }
 
+    @media (max-width: 660px) {
+      width: 18rem;
+    }
+
+    @media (max-width: 640px) {
+      width: 100%;
+    }
   }
-  :hover img{
+
+  :hover img {
     transform: translateY(-10px);
   }
-
 `;
-
