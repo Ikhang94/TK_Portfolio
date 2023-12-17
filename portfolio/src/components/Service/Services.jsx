@@ -4,9 +4,13 @@ import styled from 'styled-components';
 const Services = () => {
 
     return (
-        <div>Services</div>
+        <Container>
+            <div>Services</div>
+        </Container>
+        
     )
 
 }
 
 export default Services;
+const Container = styled.div``
