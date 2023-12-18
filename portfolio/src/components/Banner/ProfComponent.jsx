@@ -117,7 +117,7 @@ const Social = styled.div`
       background-color: #01be96;
       position: relative;
       transition: transform 400ms ease-in-out;
-      :hover {
+      &:hover {
         transform: rotate(360deg);
       }
     }
@@ -149,7 +149,7 @@ const Profile = styled.div`
     }
   }
 
-  :hover img {
+  &:hover img {
     transform: translateY(-10px);
   }
 `;

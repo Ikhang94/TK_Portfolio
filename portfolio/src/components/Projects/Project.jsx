@@ -1,15 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const Project = () => {
-
+const Project = (props) => {
+  const {img,disc} = props.item;
   return (
     <Container className='project'>
-        <img src="portrait_TK.jpg" alt="project" />
+        <img src="img" alt="project" />
         <div className='disc'>
             <h1>Description</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
-            voluptate excepturi porro sed totam quis animi dolorum rerum earum.
+            <p>{disc}
             <a href='#'>Demo</a>
             </p>
 
@@ -24,7 +23,7 @@ const Container = styled.div`
     height: 10rem;
     background-color: #4e5156;
     margin: 0 0.5rem;
-    padding: 0.5rem;
+    padding: 0 0.5rem;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
@@ -58,11 +57,11 @@ const Container = styled.div`
         }
     }
 
-    :hover > img{
+    &:hover > img{
         transform: scale(1.3);
     }
 
-    :hover > .disc{
+    &:hover > .disc{
         bottom: 0;
     }
 

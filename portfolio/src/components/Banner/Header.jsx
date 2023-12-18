@@ -118,7 +118,7 @@ const Nav = styled.div`
             text-decoration: none;
             font-weight: 400;
             position: relative;
-            :before{
+            &:before{
                 content: "";
                 position: absolute;
                 left: 0;
@@ -130,11 +130,11 @@ const Nav = styled.div`
                 transform-origin: right;
                 transition: transform 400ms ease-in-out;
             }
-            :hover:before{
+            &:hover:before{
                 transform: scale(1);
                 transform-origin: left;
             }
-            :hover{
+            &:hover{
                 opacity: 0.7;
             }
         }

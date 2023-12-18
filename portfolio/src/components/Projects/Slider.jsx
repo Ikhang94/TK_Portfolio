@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Slider from 'react-slick';
-import styled from 'styled-components';
 import Project from './Project';
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import styled from 'styled-components';
 
 let data = [
     {
@@ -27,20 +28,24 @@ let data = [
 ];
 
 var settings = {
-    dots: true,
-    infinite: false,
+    className: "center",
+    centerMode: true,
+    dots: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
+    arrows : false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 990,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false,
+          centerMode : false
         }
       },
       {
@@ -48,35 +53,63 @@ var settings = {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
+          initialSlide: 2,
+          centerMode : false
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          centerMode : false
         }
       }
     ]
   };
-
 const SliderComp = () => {
-
-    let sliderProject="";
-    sliderProject=data.map((item, i)=>(
+  const arrowRef = useRef(null);
+    let sliderProject = "";
+    sliderProject = data.map((item, i) => (
         <Project item = {item} key={i}/>
-    ));
-
-
-    return (
-        <Slider {...settings}>
-            {sliderProject}
-        </Slider>
-        
-    )
-
+    ))
+  return (
+    <Container>
+      <Slider ref={arrowRef} {...settings}>
+      {sliderProject}
+      </Slider>
+      <Buttons>
+        <button 
+        onClick={() => arrowRef.current.slickPrev()}
+        className='back'><IoIosArrowBack/></button>
+        <button 
+        onClick={() => arrowRef.current.slickNext()}
+        className='next'><IoIosArrowForward/></button>
+      </Buttons>
+    </Container>
+  )
 }
 
 export default SliderComp;
-const Container = styled.div``
+
+const Container = styled.div`
+  position: relative;
+`
+
+const Buttons = styled.div`
+  button{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.100);
+    cursor: pointer;
+    color: #01be96;
+    border: none;
+    position: absolute;
+    top: 45%;
+    right: -1rem;
+  }
+
+  .back{
+    left: -1rem;
+  }
+`
