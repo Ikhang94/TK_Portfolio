@@ -3,6 +3,9 @@ import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
 import Services from "./components/Service/Services";
 import Projects from "./components/Projects/Projects";
+import Hobby from "./components/Hobby/Hobby";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <Container>
@@ -11,10 +14,13 @@ function App() {
         <ProfComponent/>
       </Banner>
       <Services/>
-      <Project>
+      <LightColor>
         <Projects/>
-      </Project>
-
+      </LightColor>
+        <Hobby/>
+      <LightColor>
+        <Footer/>
+      </LightColor>
     </Container>
   );
 }
@@ -30,7 +36,7 @@ height: 100vh
   padding-bottom: 1rem;
 }
 `;
-const Project = styled.div`
+const LightColor = styled.div`
 background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 `;
 
