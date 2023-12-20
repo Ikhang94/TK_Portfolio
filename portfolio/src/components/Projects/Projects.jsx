@@ -1,13 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
 import SliderComp from './Slider'
+import {Zoom} from 'react-awesome-reveal';
+
 const Projects = () => {
 
     return (
-        <Container>
-            <h1>All <span className="green">Projects</span></h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
-            voluptate excepturi porro sed totam quis animi dolorum rerum earum.</p>
+        <Container id="project">
+            <Zoom>
+                <h1>All <span className="green">Projects</span></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
+                voluptate excepturi porro sed totam quis animi dolorum rerum earum.</p>
+            </Zoom>
             <Slide>
                 <SliderComp/>
             </Slide>

@@ -1,39 +1,43 @@
 import React from 'react'
 import styled from 'styled-components';
 import { FaLinkedinIn } from "react-icons/fa";
+import {Slide} from 'react-awesome-reveal';
 
 const ProfComponent = () => {
 
     return (
 
-        <Container>
-            <Texts>
-            <h4>
-                Hello <span className="green">I'am</span>
-            </h4>
-            <h1 className="green">CAO Thien-Khang</h1>
-            <h3>Developer</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-                iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-                corporis quos?
-            </p>
-            <button>Let's talk</button>
-            <Social>
-                <p>Check out my</p>
-                <div className="social-icons">
-                <span>
-                    <a href="/">
-                    <FaLinkedinIn />
-                    </a>
-                </span>
-                </div>
-            </Social>
-            </Texts>
-            <Profile>
-                
-               <img src="portrait_TK.jpg" alt="profile" /> 
-            </Profile>
+        <Container id="home">
+            <Slide direction="left">
+              <Texts>
+              <h4>
+                  Hello <span className="green">I'am</span>
+              </h4>
+              <h1 className="green">CAO Thien-Khang</h1>
+              <h3>Developer</h3>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+                  iusto. Adipisci in qui officia provident tenetur sequi, deserunt
+                  corporis quos?
+              </p>
+              <button>Let's talk</button>
+              <Social>
+                  <p>Check out my</p>
+                  <div className="social-icons">
+                  <span>
+                      <a href="/">
+                      <FaLinkedinIn />
+                      </a>
+                  </span>
+                  </div>
+              </Social>
+              </Texts>
+            </Slide>
+           <Slide>
+           <Profile direction="right"> 
+                <img src="portrait_TK.jpg" alt="profile" /> 
+             </Profile>
+            </Slide>
         </Container>
 
     )

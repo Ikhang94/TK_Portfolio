@@ -2,42 +2,66 @@ import React, { Profiler } from 'react'
 import styled from 'styled-components';
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
+import { MdAlternateEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
-
+import {Zoom, Slide, Fade} from 'react-awesome-reveal';
 const Footer = () => {
-
+    const scrollUp = () => {
+        window.scroll({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
     return (
-        <Container>
+        <Container id="footer">
             <Profile>
-                <h1>Portfolio</h1>
+                <Slide direction='left' delay={1}><h1>Portfolio</h1></Slide>
                 <div className='address'>
-                   <h1>Address</h1>
-                   <p>48 rue Garibaldi, Saint-maur des fossés, 94100</p> 
+                   <Slide direction='left'><h1>Address</h1></Slide>
+                   <Slide direction='left'><p>48 rue Garibaldi, Saint-maur des fossés, 94100</p></Slide>
                 </div>
                 <div className='links'>
-                    <h1>Contact me directly</h1>
+                <Slide direction='left'><h1>Contact me directly</h1></Slide>
                     <div>
-                        <span><FiPhoneCall/></span>
-                        <a href="tel:+3352233508">+33 52 23 35 08</a>
+                    <Slide direction='left'><span><FiPhoneCall/></span></Slide>
+                        <Slide direction='left'><a href="tel:+3352233508">+33 52 23 35 08</a></Slide>
                     </div>
                     <div>
-                        <span><FiMail/></span>
-                        <a href="mailto:cao.thien.khang.pro@gmail.com">cao.thien.khang.pro@gmail.com</a>
+                        <span><HiOutlineMailOpen/></span>
+                        <Slide direction='left'><a href="mailto:cao.thien.khang.pro@gmail.com">cao.thien.khang.pro@gmail.com</a></Slide>
                     </div>
                 </div>
                 <div className='profile'>
-                    <h1>Check my profile</h1>
+                <Slide direction='left'><h1>Check my profile</h1></Slide>
                     <div className='icons'>
-                    <span><a href='#'><AiFillGithub/></a></span>
-                    <span><a href='#'><AiFillLinkedin/></a></span>
+                    <Zoom><span><a href='#'><AiFillGithub/></a></span></Zoom>
+                    <Zoom><span><a href='#'><AiFillLinkedin/></a></span></Zoom>
 
                     </div>
                 </div>
-                <ArrowUp><AiOutlineArrowUp/></ArrowUp>
+                <Fade><ArrowUp onClick={scrollUp}><AiOutlineArrowUp/></ArrowUp></Fade>
             </Profile>
-            <Form></Form>
+            <Form>
+                <Slide direction="right">
+                    <form>
+                        <div className="name">
+                        <span><CgProfile/></span> 
+                        <input type="text" placeholder="Fullname..."></input>
+                        </div>
+                        <div className="email">
+                        <span><MdAlternateEmail/></span> 
+                        <input type="email" placeholder="Email..."></input>
+                        </div>
+                        <div className="message">
+                        <span className="messageIcon"><FiMail/></span> 
+                        <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                </Slide>
+            </Form>
         </Container>
         
     )
@@ -52,12 +76,20 @@ const Container = styled.div`
     width: 80%;
     maw-width: 1280px;
     margin: 0 auto;
-    @media(max-width:840px){
-        width: 80%;
-    }
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 840px) {
+        width: 90%;
+      }
+    
+      @media (max-width: 650px) {
+        flex-direction: column;
+        gap: 3rem;
+      }
 `
 
 const Profile = styled.div`
+    flex: 1;
     .address{
         padding: 1rem 0;
         h1{
@@ -67,6 +99,10 @@ const Profile = styled.div`
         p{
             width: 60%;
             padding-top: 0.5rem;
+            
+              @media (max-width: 650px) {
+                width: 100%;
+              }
         }
 
     }
@@ -106,6 +142,7 @@ const Profile = styled.div`
                 align-items: center;
                 justify-content: center;
                 background-color: #000;
+                color: #fff;
                 width: 2rem;
                 height: 2rem;
                 margin-right: 0.5rem;
@@ -116,15 +153,13 @@ const Profile = styled.div`
                 }
 
                 a{
-                    margin-top: 1.2rem
                     color: #fff;
+                    margin-top: 0.2rem
                 }
             }
         }
     } 
 `
-
-const Form = styled.div``
 
 const ArrowUp = styled.div`
 width: 2rem;
@@ -138,4 +173,65 @@ font-size: 1.3rem;
 font-weight: 700;
 margin-top: 2rem;
 
+
+  @media (max-width: 650px) {
+    position: absolute;
+    right: 3rem;
+    top: 16rem;
+  }
+`
+
+
+const Form = styled.div`
+flex: 1;
+  h1 {
+    font-size: 1.3rem;
+    padding-bottom: 0.7rem;
+  }
+
+  form {
+    background-color: #191923;
+    padding: 0.8rem;
+    border-radius: 5px;
+    .name,
+    .email,
+    .message {
+      display: flex;
+      border: 1px solid gray;
+      margin-bottom: 0.5rem;
+      input,
+      textarea {
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #fff;
+        background-color: transparent;
+        padding: 1rem 0.5rem;
+      }
+      span {
+        background-color: #3e3e3e;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .messageIcon {
+        align-items: flex-start;
+        padding-top: 0.5rem;
+      }
+    }
+
+    button {
+      width: 5rem;
+      height: 1.8rem;
+      background-color: #01be96;
+      border: none;
+      border-radius: 5px;
+      filter: drop-shadow(0px 4px 5px #01be9551);
+      cursor: pointer;
+      :hover {
+        filter: drop-shadow(0px 6px 9px #01be9551);
+      }
+    }
+  }
 `

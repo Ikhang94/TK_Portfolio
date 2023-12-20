@@ -5,13 +5,17 @@ import Services from "./components/Service/Services";
 import Projects from "./components/Projects/Projects";
 import Hobby from "./components/Hobby/Hobby";
 import Footer from "./components/Footer/Footer";
+import {Fade} from 'react-awesome-reveal';
+
 
 function App() {
   return (
     <Container>
       <Banner>
-        <Header/>
-        <ProfComponent/>
+        <Fade>
+          <Header/>
+          <ProfComponent/>
+        </Fade>
       </Banner>
       <Services/>
       <LightColor>
