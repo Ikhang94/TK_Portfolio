@@ -1,4 +1,4 @@
-import React, { Profiler } from 'react'
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
@@ -7,12 +7,59 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import {Zoom, Slide, Fade} from 'react-awesome-reveal';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Footer = () => {
     const scrollUp = () => {
         window.scroll({
           top: 0,
           behavior: "smooth",
         });
+      };
+
+      const [formData, setFormData] = useState({
+        fullname: '',
+        email: '',
+        message: ''
+      });
+    
+      const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        try {
+          const response = await fetch('https://formspree.io/f/mayrwpla', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              _to: 'cao.thien.khang.pro@gmail.com',
+              ...formData
+            })
+          });
+    
+          if (response.ok) {
+            // Réinitialiser les champs du formulaire après l'envoi réussi
+            setFormData({
+              fullname: '',
+              email: '',
+              message: ''
+            });
+            toast.success('Le formulaire a été soumis avec succès!', {
+              position: toast.POSITION.BOTTOM_RIGHT,
+              autoClose: 3000 // Durée d'affichage de l'alerte en millisecondes (facultatif)
+            });
+          }
+        } catch (error) {
+          console.error('Erreur lors de la soumission du formulaire:', error);
+          toast.error('Une erreur s\'est produite. Veuillez réessayer.', {
+            position: toast.POSITION.BOTTOM_RIGHT
+          });
+        }
       };
     return (
         <Container id="footer">
@@ -44,24 +91,27 @@ const Footer = () => {
                 <Fade><ArrowUp onClick={scrollUp}><AiOutlineArrowUp/></ArrowUp></Fade>
             </Profile>
             <Form>
-                <Slide direction="right">
-                    <form>
-                        <div className="name">
-                        <span><CgProfile/></span> 
-                        <input type="text" placeholder="Fullname..."></input>
-                        </div>
-                        <div className="email">
-                        <span><MdAlternateEmail/></span> 
-                        <input type="email" placeholder="Email..."></input>
-                        </div>
-                        <div className="message">
-                        <span className="messageIcon"><FiMail/></span> 
-                        <textarea cols="30" rows="10" placeholder="Message..."></textarea>
-                        </div>
-                        <button>Submit</button>
-                    </form>
-                </Slide>
-            </Form>
+        <Slide direction="right">
+          <form onSubmit={handleSubmit}>
+            {/* ... Vos champs existants ... */}
+            {/* Exemple de champs pour le nom, l'email et le message */}
+            <div className="name">
+              <span><CgProfile /></span>
+              <input type="text" name="fullname" placeholder="Fullname..." value={formData.fullname} onChange={handleChange} required />
+            </div>
+            <div className="email">
+              <span><MdAlternateEmail /></span>
+              <input type="email" name="email" placeholder="Email..." value={formData.email} onChange={handleChange} required />
+            </div>
+            <div className="message">
+              <span className="messageIcon"><FiMail /></span>
+              <textarea name="message" cols="30" rows="10" placeholder="Message..." value={formData.message} onChange={handleChange} required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </Slide>
+      </Form>
+      <StyledToastContainer />
         </Container>
         
     )
@@ -235,3 +285,23 @@ flex: 1;
     }
   }
 `
+
+const StyledToastContainer = styled(ToastContainer)`
+  .Toastify__toast {
+    /* Votre style CSS pour les alertes */
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .Toastify__toast--success {
+    /* Votre style CSS pour les alertes de succès */
+    background-color: #01be96;
+  }
+
+  .Toastify__toast--error {
+    /* Votre style CSS pour les alertes d'erreur */
+    background-color: #e74c3c;
+  }
+`;
