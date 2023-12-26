@@ -60,7 +60,7 @@ const Container = styled.div`
                 height: 2px;
                 background-color: ${props => props.bar ? "transparent" : "#fff"};
                 transition: all 400ms ease-in-out;
-                :before, :after{
+                &:before, &:after{
                     content: "";
                     width: 100%;
                     height: 2px;
@@ -68,12 +68,12 @@ const Container = styled.div`
                     position: absolute;
                 }
 
-                :before{
+                &:before{
                     transform: ${props => props.bar ? "rotate(45deg)" : "translateY(10px)"};
                     transition: all 400ms ease-in-out;
                 }
 
-                :after{
+                &:after{
                     transform: ${props => props.bar ? "rotate(-45deg)" : "translateY(-10px)"};
                     transition: all 400ms ease-in-out;
                 }
@@ -109,7 +109,7 @@ const Nav = styled.div`
         height: ${props => props.bar ? "100vh" : 0};
         transition: height 400ms ease-in-out;
         overflow: hidden;
-        z-index: 100;
+        z-index: 99;
     }
     span{
         margin-left: 1rem;
