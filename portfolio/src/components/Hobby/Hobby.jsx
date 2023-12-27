@@ -61,7 +61,10 @@ const Container = styled.div`
 
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 4rem;
   gap: 1rem;
+  max-height: 500px; /* Ajustez la hauteur maximale selon vos besoins */
+  overflow: hidden;
+  
 `;
