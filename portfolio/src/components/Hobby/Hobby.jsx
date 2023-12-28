@@ -51,7 +51,7 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 3rem 0;
   @media (max-width: 840px) {
-    width: 90%;
+    width: 70%;
   }
 
   h1 {
@@ -61,10 +61,14 @@ const Container = styled.div`
 
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 4rem;
   gap: 1rem;
-  max-height: 500px; /* Ajustez la hauteur maximale selon vos besoins */
-  overflow: hidden;
-  
+  max-height: unset;
+  overflow: visible;
+
+  @media (max-width: 600px) {
+    position : absolute;
+    grid-template-columns: 1fr; /* Pour les écrans très petits, affiche un élément par ligne */
+  }
 `;

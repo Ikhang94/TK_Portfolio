@@ -35,16 +35,19 @@ const Card = (props) => {
           }}
           >
             <ModalContent>
+            <h2>{title}</h2>
+            <div className="txt_and_img-container">
+
               <div className="img-container">
                 <img src="source_de_votre_image" alt="Image" />
               </div>
               <div className="text-container">
-                <h2>{title}</h2>
                 <p>
                   Ajoutez ici le contenu supplémentaire que vous souhaitez afficher. Ceci est un exemple de texte. Vous pouvez remplacer cela par votre propre contenu.
                 </p>
-                <button onClick={() => setModalOpen(false)}>Close Modal</button>
               </div>
+            </div>
+              <button onClick={() => setModalOpen(false)}>Close Modal</button>
             </ModalContent>
           </Modal>
     </Container>
@@ -62,7 +65,17 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100%; /* Remplacez par une valeur spécifique si nécessaire */
+    height: 100%;
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1rem;
+      }
+  
+      p {
+        font-size: 0.7rem;
+      }
+    }
 
     span{
         font-size: 4rem;
@@ -95,18 +108,36 @@ const Container = styled.div`
     }
 `
 const ModalContent = styled.div`
-  margin: 0 auto; /* centre horizontalement */
+  margin: 0 auto;
   text-align: center;
-
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: left;
-  padding: 1rem;
+
+  .txt_and_img-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
 
   .img-container {
     flex: 1;
     margin-right: 1rem;
+    text-align: center;
   }
 
   .text-container {
@@ -116,15 +147,9 @@ const ModalContent = styled.div`
     justify-content: center;
   }
 
-  h2{
-      font-size: 1.2rem;
-      padding-bottom: 1rem;
-      margin-bottom: 0.5rem;
-  }
-
-  p{
-      font-size: 0.8rem;
-      line-height: 1.4;
+  p {
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
 
   img {
@@ -134,8 +159,6 @@ const ModalContent = styled.div`
   }
 
   button {
-    align-self: center; /* Aligne le conteneur de bouton en bas à droite */
-    margin-top: auto; /* Utilise l'espace disponible pour pousser le conteneur vers le bas */
     width: 5rem;
     height: 1.8rem;
     background-color: #01be96;
@@ -143,11 +166,27 @@ const ModalContent = styled.div`
     border-radius: 5px;
     filter: drop-shadow(0px 4px 5px #01be9551);
     cursor: pointer;
-    position: absolute;
-    bottom: 1rem;
+    margin-top: 1rem;
+    position: absolute; /* Utilisation de la position absolue */
+    bottom: 1rem; /* Positionnement en bas de la fenêtre */
+
     :hover {
       filter: drop-shadow(0px 6px 9px #01be9551);
     }
   }
-`;
 
+  @media (max-width: 768px) {
+
+    .txt_and_img-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    button {
+      /* ... (vos styles existants) */
+      margin-top: 1rem; /* Réajustez la marge si nécessaire pour l'espacement */
+      align-self: center; /* Centrer le bouton sur mobile */
+    }
+  }
+`;
