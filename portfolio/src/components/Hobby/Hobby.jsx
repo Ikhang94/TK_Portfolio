@@ -12,7 +12,7 @@ const Hobby = () => {
         <Container>
             <Slide direction="down">
                 <h1>
-                My<span className="green"> hobbies</span>
+                  My<span className="green"> hobbies</span>
                 </h1>
             </Slide>
             <Cards>

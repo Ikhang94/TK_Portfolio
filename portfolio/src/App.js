@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
-import Services from "./components/Service/Services";
+import Skillset from "./components/Skills/Skillset";
 import Projects from "./components/Projects/Projects";
 import Hobby from "./components/Hobby/Hobby";
 import Footer from "./components/Footer/Footer";
@@ -17,7 +17,7 @@ function App() {
           <ProfComponent/>
         </Fade>
       </Banner>
-      <Services/>
+      <Skillset/>
       <LightColor>
         <Projects/>
       </LightColor>
