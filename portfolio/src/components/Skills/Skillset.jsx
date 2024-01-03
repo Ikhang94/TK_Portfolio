@@ -23,6 +23,53 @@ let data = [
   {
       img : "skills/nodejs.svg",
       name : "NodeJS"
+  },
+  {
+    img : "skills/php.png",
+    name : "PHP"
+  },
+  {
+    img : "skills/mysql.svg",
+    name : "MySQL"
+  },
+  {
+    img : "skills/mongodb.svg",
+    name : "Mongodb"
+  },
+  {
+    img : "skills/java.svg",
+    name : "Java"
+  },
+  {
+    img : "skills/python.svg",
+    name : "Python"
+  },
+  {
+    img : "skills/c.svg",
+    name : "C"
+  },
+  {
+    img : "skills/c++.svg",
+    name : "C++"
+  },
+  {
+    img : "skills/linux.svg",
+    name : "Linux"
+  },
+  {
+    img : "skills/git.svg",
+    name : "Git"
+  },
+  {
+    img : "skills/github.svg",
+    name : "Github"
+  },
+  {
+    img : "skills/docker.svg",
+    name : "Docker"
+  },  {
+    img : "skills/arduino.svg",
+    name : "Arduino"
   }
 ];
 
@@ -66,7 +113,8 @@ h1 {
 .skillset{
 
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne en cas de manque d'espace */
+  justify-content: center; /* Centrer les éléments horizontalement */
   align-items: center;
 }
 `

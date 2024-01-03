@@ -35,7 +35,7 @@ const ProfComponent = () => {
             </Slide>
            <Slide>
            <Profile direction="right"> 
-                <img src="portrait_TK.jpg" alt="profile" /> 
+                <img src="/CTK_portrait.jpg" alt="profile" /> 
              </Profile>
             </Slide>
         </Container>
