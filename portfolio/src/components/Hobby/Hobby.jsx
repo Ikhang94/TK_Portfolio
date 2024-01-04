@@ -9,7 +9,7 @@ import { Slide } from "react-awesome-reveal";
 const Hobby = () => {
 
     return (
-        <Container>
+        <Container id="hobby">
             <Slide direction="down">
                 <h1>
                   My<span className="green"> hobbies</span>

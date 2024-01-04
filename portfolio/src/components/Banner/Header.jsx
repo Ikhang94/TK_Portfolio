@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { GiCandleFlame } from "react-icons/gi";
+import { MdOutlineWeb } from "react-icons/md";
 
 const Header = () => {
     const [bar, setBar] = useState(false);
   return (
     <Container bar={bar}>
         <Logo>
-            <span className='green'><GiCandleFlame/></span>
+            <span className='green'><MdOutlineWeb/></span>
             <h1>Portfolio</h1>
         </Logo>
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
-            <span><a href="#service">Services</a></span>
+            <span><a href="#skills">Skills</a></span>
             <span><a href="#project">Projects</a></span>
-            <span><a href="#client">Testimonials</a></span>
-            <span><a href="#footer">Portfolio</a></span>
+            <span><a href="#hobby">Hobby</a></span>
+            <span><a href="#footer">Contact</a></span>
         </Nav>
         <div
         onClick={() => setBar(!bar)}

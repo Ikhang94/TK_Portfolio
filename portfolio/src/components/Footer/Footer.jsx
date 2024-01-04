@@ -64,7 +64,7 @@ const Footer = () => {
     return (
         <Container id="footer">
             <Profile>
-                <Slide direction='left' delay={1}><h1>Portfolio</h1></Slide>
+                <Slide direction='left' delay={1}><h1>Contact</h1></Slide>
                 <div className='address'>
                    <Slide direction='left'><h1>Address</h1></Slide>
                    <Slide direction='left'><p>48 rue Garibaldi, Saint-maur des fossés, 94100</p></Slide>

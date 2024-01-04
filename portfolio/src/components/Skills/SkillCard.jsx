@@ -33,7 +33,7 @@ const Container = styled.div`
 
   @media (max-width: 840px) {
     padding: 3rem 0.5rem; /* Réduire davantage le padding pour les appareils mobiles */
-    width: 90%;
+    width: 30%;
   }
 
   .box_name {
