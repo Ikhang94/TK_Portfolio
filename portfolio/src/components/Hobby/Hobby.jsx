@@ -68,7 +68,6 @@ const Cards = styled.div`
   overflow: visible;
 
   @media (max-width: 600px) {
-    position : absolute;
     grid-template-columns: 1fr; /* Pour les écrans très petits, affiche un élément par ligne */
   }
 `;

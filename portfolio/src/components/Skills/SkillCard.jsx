@@ -27,10 +27,6 @@ const Container = styled.div`
   justify-content: center; /* Centrer les éléments enfants horizontalement */
   align-items: center; /* Centrer les éléments enfants verticalement */
 
-  @media (max-width: 1280px) {
-    padding: 3rem 1rem; /* Réduire le padding pour les écrans plus petits */
-  }
-
   @media (max-width: 840px) {
     padding: 3rem 0.5rem; /* Réduire davantage le padding pour les appareils mobiles */
     width: 30%;
@@ -53,10 +49,9 @@ const ImageWrapper = styled.div`
   max-height: 100px;
   width: 100%;
   height: auto;
-  margin: 0.5rem; /* Ajout de marge entre les images pour les écrans plus petits */
-  flex-basis: calc(20% - 1rem); /* 20% de largeur avec 1rem de marge entre les éléments */
-  flex-direction: column; /* Affichage des éléments en colonne */
+  margin: 0.5rem;
   text-align: center;
+
 
   img {
     width: 100%;
@@ -74,12 +69,10 @@ const ImageWrapper = styled.div`
 `;
 
 const Box = styled.div`
-  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-  @media (max-width: 600px) { /* Vous pouvez ajuster la valeur de 600px selon vos besoins */
-  
-    width: 200px; /* Modifiez cette valeur selon la taille désirée */
-    height: 150px; /* Modifiez cette valeur selon la taille désirée */
-  }
 `;
