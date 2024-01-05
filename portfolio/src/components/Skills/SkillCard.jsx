@@ -22,13 +22,13 @@ export default SkillCard;
 const Container = styled.div`
   max-width: 100%; /* Utilisation de 100% de la largeur disponible */
   margin: 0 auto;
-  padding: 3rem 2rem; /* Ajout de padding pour les côtés */
+  padding: 2rem 2rem; /* Ajout de padding pour les côtés */
   flex-wrap: wrap; /* Permet aux éléments enfants de passer à la ligne si l'espace est insuffisant */
   justify-content: center; /* Centrer les éléments enfants horizontalement */
   align-items: center; /* Centrer les éléments enfants verticalement */
 
   @media (max-width: 840px) {
-    padding: 3rem 0.5rem; /* Réduire davantage le padding pour les appareils mobiles */
+    padding: 1rem 0.5rem; /* Réduire davantage le padding pour les appareils mobiles */
     width: 30%;
   }
 
@@ -49,7 +49,6 @@ const ImageWrapper = styled.div`
   max-height: 100px;
   width: 100%;
   height: auto;
-  margin: 0.5rem;
   text-align: center;
 
 

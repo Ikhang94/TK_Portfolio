@@ -103,7 +103,7 @@ max-width: 1280px;
 margin: 0 auto;
 padding: 3rem 0;
 @media (max-width: 840px) {
-  width: 90%;
+  width: 80%;
 }
 
 h1 {
