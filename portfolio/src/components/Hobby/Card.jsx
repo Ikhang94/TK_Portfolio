@@ -12,7 +12,7 @@ const Card = (props) => {
       <h1>{title}</h1>
       <p>{disc}</p>
 
-          <button onClick={setModalOpen}>See more</button>
+          <button onClick={setModalOpen}>Détails</button>
           <Modal
             isOpen={modalOpen}
             onRequestClose={() => setModalOpen(false)}

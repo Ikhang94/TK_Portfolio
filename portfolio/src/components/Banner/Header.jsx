@@ -12,8 +12,8 @@ const Header = () => {
         </Logo>
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
-            <span><a href="#skills">Skills</a></span>
-            <span><a href="#project">Projects</a></span>
+            <span><a href="#skills">Compétences</a></span>
+            <span><a href="#project">Projets</a></span>
             <span><a href="#hobby">Hobby</a></span>
             <span><a href="#footer">Contact</a></span>
         </Nav>

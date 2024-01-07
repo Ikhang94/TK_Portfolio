@@ -2,12 +2,14 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Project = (props) => {
-  const {img,disc} = props.item;
+  const {title,img,disc} = props.item;
   return (
     <Container className='project'>
+      <div className="img_carousel">
         <img src={img} alt="project" />
+      </div>
         <div className='disc'>
-            <h1>Description</h1>
+            <h1>{title}</h1>
             <p>{disc}
                 <a href='#'>Demo</a>
             </p>
@@ -20,8 +22,8 @@ const Project = (props) => {
 export default Project;
 
 const Container = styled.div`
-  /* styles for larger screens */
-  height: 10rem;
+  width: 100%;
+  height: 100%;
   background-color: #4e5156;
   margin: 0 0.5rem;
   padding: 0 0.5rem;
@@ -29,11 +31,18 @@ const Container = styled.div`
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  .slick-slide img {
+    
+  }
   img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     transition: transform 400ms ease-in-out;
+    
+  }
+  .img_carousel{
+    display: initial;
   }
   .disc {
     position: absolute;
@@ -50,6 +59,7 @@ const Container = styled.div`
     p {
       width: 90%;
       font-size: 0.8rem;
+      margin-bottom: 1rem;  
       a {
         margin-left: 0.4rem;
         color: red;

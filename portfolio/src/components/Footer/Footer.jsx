@@ -66,11 +66,11 @@ const Footer = () => {
             <Profile>
                 <Slide direction='left' delay={1}><h1>Contact</h1></Slide>
                 <div className='address'>
-                   <Slide direction='left'><h1>Address</h1></Slide>
+                   <Slide direction='left'><h1>Adresse</h1></Slide>
                    <Slide direction='left'><p>48 rue Garibaldi, Saint-maur des fossés, 94100</p></Slide>
                 </div>
                 <div className='links'>
-                <Slide direction='left'><h1>Contact me directly</h1></Slide>
+                <Slide direction='left'><h1>Contactez moi</h1></Slide>
                     <div>
                     <Slide direction='left'><span><FiPhoneCall/></span></Slide>
                         <Slide direction='left'><a href="tel:+3352233508">+33 52 23 35 08</a></Slide>
@@ -81,7 +81,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='profile'>
-                <Slide direction='left'><h1>Check my profile</h1></Slide>
+                <Slide direction='left'><h1>Regarder mon profil</h1></Slide>
                     <div className='icons'>
                     <Zoom><span><a href='https://github.com/Ikhang94'><AiFillGithub/></a></span></Zoom>
                     <Zoom><span><a href='https://www.linkedin.com/in/thien-khang-cao/'><AiFillLinkedin/></a></span></Zoom>
@@ -107,7 +107,7 @@ const Footer = () => {
               <span className="messageIcon"><FiMail /></span>
               <textarea name="message" cols="30" rows="10" placeholder="Message..." value={formData.message} onChange={handleChange} required></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Envoyer</button>
           </form>
         </Slide>
       </Form>

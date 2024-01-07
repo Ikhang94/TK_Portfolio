@@ -12,29 +12,30 @@ const Hobby = () => {
         <Container id="hobby">
             <Slide direction="down">
                 <h1>
-                  My<span className="green"> hobbies</span>
+                  Mes<span className="green"> hobbys</span>
                 </h1>
             </Slide>
             <Cards>
             <Slide direction="left">
                 <Card             
                     Icon={MdGames}
-                    title={"Games"}
-                    disc={`I play regularly Strategics Games like Civilisation 6, Europa Universalis 4 and Totwal War Warhammer`}
+                    title={"Jeux vidéos"}
+                    disc={`Je joue régulièrement à des jeux de stratégies comme Civilisation 6, Europa Universalis 4 ou Total war Warhammer 3`}
                     />  
             </Slide>
             <Slide direction="up">
                 <Card             
                     Icon={GiNinjaHeroicStance}
                     title={"Manga/Anime"}
-                    disc={`I love japan and paticularly Mangas and Animes`}
+                    disc={`J'adore le Japon notamment la façon de vivre de ses habitants mais surtout pour les Mangas/Animes`}
                     />  
             </Slide>
             <Slide direction="right">
                 <Card             
                     Icon={GiSpellBook }
                     title={"Heroic Fantasy"}
-                    disc={`I like to read some Heroic Fantasy like Warhammer and middle Earth`}
+                    disc={`J'aime beacoup lire de l'heroic Fantasy afin de m'immerger dans un univers rempli d'épée et de magie comme l'univers de 
+                    Tolkien`}
                     />  
             </Slide>
             </Cards>

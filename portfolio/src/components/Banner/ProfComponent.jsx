@@ -11,14 +11,19 @@ const ProfComponent = () => {
             <Slide direction="left">
               <Texts>
               <h4>
-                  Hello <span className="green">I'am</span>
+                  Bonjour <span className="green">Je m'appelle</span>
               </h4>
               <h1 className="green">CAO Thien-Khang</h1>
-              <h3>Developer</h3>
+              <h3>Developpeur Web</h3>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-                  iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-                  corporis quos?
+                Je suis quelqu'un qui s'est passioné pour l'informatique pour son côté créatif. En effet, ce domaine
+                offre de nombreuses possibilités pour créer divers site web, applications ou logiciels uniques et différents.
+                C'est pour cela que je m'étais orienté sur ces études en commençant par un BTS SNIR (Système Numérique Informatique et Réseaux)
+                où j'avais apris les premières bases dans le développement web, la programation orienté objet et le réseaux. Après avoir
+                obtenu mon BTS, j'ai décidé de rejoidnre L'école Epitech en Pré MSC-Pro car j'étais attiré par leur pédagogie qui consistait
+                à "Aprendre à Aprendre", ce qui signifie qu'on apprenait en pratiquant, notamment par des projets sans passer par des cours théoriques.
+                En rejoignant ce cursus, je dois effectuer une alternance qui me permettrait de gagner de l'expérience dans le monde travail et donc
+                je recherche une alternance dans le domaine du développement qui commencera dès que possible.  
               </p>
               <button><a href="#footer">Let's talk</a></button>
               <Social>
@@ -57,6 +62,7 @@ const Container = styled.div`
   z-index: 1;
   @media (max-width: 840px) {
     width: 90%;
+    padding-top: 0;
   }
 
   @media (max-width: 640px) {
@@ -82,6 +88,7 @@ const Texts = styled.div`
   }
   p {
     font-weight: 300;
+    line-height: 1.6;
   }
 
   button {
@@ -105,6 +112,7 @@ const Texts = styled.div`
 `;
 const Social = styled.div`
   margin-top: 3rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;

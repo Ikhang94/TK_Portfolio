@@ -6,24 +6,24 @@ import styled from 'styled-components';
 
 let data = [
     {
-        img : "portrait_TK.jpg",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        title : "Tower Sheep",
+        img : "project/towersheep.jpg",
+        disc : "Jeux tower defense qui a pour but de défendre un mouton des aliens en construisant"
     },
-    {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324074/Yt-portfolio/ui4_jku3ol.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+    {   
+        title : "QCM Dynamique",
+        img : "project/carton_plickers.png",
+        disc : "Projet dans laquelle les participants répondent aux QCm à l'aide de carton ressemblent à des QR codes"
     },
-    {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+    {   
+        title : "JobHunt",
+        img : "project/jobhunt.svg",
+        disc : "Site web qui est en fait un Joboard ressemblant à Linkdin, Indeed, Jobhunt..."
     },
-    {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-    },
-    {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+    {   
+        title : "A Venir",
+        img : "project/WIP.jpg",
+        disc : "Projet en cours de création"
     }
 ];
 
