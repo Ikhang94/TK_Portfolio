@@ -20,12 +20,12 @@ const ProfComponent = () => {
                   iusto. Adipisci in qui officia provident tenetur sequi, deserunt
                   corporis quos?
               </p>
-              <button>Let's talk</button>
+              <button><a href="#footer">Let's talk</a></button>
               <Social>
                   <p>Check out my</p>
                   <div className="social-icons">
                   <span>
-                      <a href="/">
+                      <a href="https://www.linkedin.com/in/thien-khang-cao/">
                       <FaLinkedinIn />
                       </a>
                   </span>
@@ -91,6 +91,11 @@ const Texts = styled.div`
     background-color: #01be96;
     border: none;
     color: #fff;
+    a{
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+    }
     font-weight: 500;
     filter: drop-shadow(0px 10px 10px #01be9551);
     :hover {
@@ -136,6 +141,7 @@ const Social = styled.div`
   }
 `;
 const Profile = styled.div`
+  margin-bottom: 1rem;
   img {
     width: 25rem;
     filter: drop-shadow(0px 10px 10px #01be9570);

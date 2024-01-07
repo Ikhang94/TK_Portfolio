@@ -102,12 +102,17 @@ const Container = styled.div`
 max-width: 1280px;
 margin: 0 auto;
 padding: 3rem 0;
-@media (max-width: 840px) {
-  width: 80%;
-}
-
 h1 {
   padding-top: 1rem;
+  margin-left: 2rem;
+}
+@media (max-width: 840px) {
+  width: 80%;
+  h1 {
+    padding-top: 1rem;
+    margin-left: 0;
+
+  }
 }
 
 .skillset{

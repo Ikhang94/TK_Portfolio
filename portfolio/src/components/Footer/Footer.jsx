@@ -83,8 +83,8 @@ const Footer = () => {
                 <div className='profile'>
                 <Slide direction='left'><h1>Check my profile</h1></Slide>
                     <div className='icons'>
-                    <Zoom><span><a href='#'><AiFillGithub/></a></span></Zoom>
-                    <Zoom><span><a href='#'><AiFillLinkedin/></a></span></Zoom>
+                    <Zoom><span><a href='https://github.com/Ikhang94'><AiFillGithub/></a></span></Zoom>
+                    <Zoom><span><a href='https://www.linkedin.com/in/thien-khang-cao/'><AiFillLinkedin/></a></span></Zoom>
 
                     </div>
                 </div>

@@ -45,8 +45,8 @@ const Container = styled.div`
 
 const ImageWrapper = styled.div`
 
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 50px;
+  max-height: 50px;
   width: 100%;
   height: auto;
   text-align: center;
