@@ -5,9 +5,7 @@ const Project = (props) => {
   const {title,img,disc} = props.item;
   return (
     <Container className='project'>
-      <div className="img_carousel">
         <img src={img} alt="project" />
-      </div>
         <div className='disc'>
             <h1>{title}</h1>
             <p>{disc}
@@ -35,15 +33,14 @@ const Container = styled.div`
     
   }
   img {
+    margin-left: 1.2rem;
     width: 90%;
     height: 90%;
     object-fit: cover;
     transition: transform 400ms ease-in-out;
     
   }
-  .img_carousel{
-    display: initial;
-  }
+
   .disc {
     position: absolute;
     right: 0;
@@ -70,6 +67,10 @@ const Container = styled.div`
   /* styles for smaller screens (mobile) */
   @media (max-width: 768px) {
     height: auto; /* Adjust height as needed for mobile layout */
+    img {
+      margin-left: 0.5rem;
+      
+    }
     .disc {
       bottom: 0;
     }
