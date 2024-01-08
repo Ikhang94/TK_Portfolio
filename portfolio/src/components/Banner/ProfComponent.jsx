@@ -16,14 +16,17 @@ const ProfComponent = () => {
               <h1 className="green">CAO Thien-Khang</h1>
               <h3>Developpeur Web</h3>
               <p>
-                Je suis quelqu'un qui s'est passioné pour l'informatique pour son côté créatif. En effet, ce domaine
-                offre de nombreuses possibilités pour créer divers site web, applications ou logiciels uniques et différents.
-                C'est pour cela que je m'étais orienté sur ces études en commençant par un BTS SNIR (Système Numérique Informatique et Réseaux)
-                où j'avais apris les premières bases dans le développement web, la programation orienté objet et le réseaux. Après avoir
-                obtenu mon BTS, j'ai décidé de rejoidnre L'école Epitech en Pré MSC-Pro car j'étais attiré par leur pédagogie qui consistait
-                à "Aprendre à Aprendre", ce qui signifie qu'on apprenait en pratiquant, notamment par des projets sans passer par des cours théoriques.
-                En rejoignant ce cursus, je dois effectuer une alternance qui me permettrait de gagner de l'expérience dans le monde travail et donc
-                je recherche une alternance dans le domaine du développement qui commencera dès que possible.  
+              Je suis quelqu'un qui s'est passionné pour l'informatique en raison de son côté créatif. 
+              Ce domaine offre de nombreuses possibilités pour créer des sites web, des applications ou des logiciels uniques 
+              et différents. C'est pourquoi j'ai choisi de me spécialiser dans ce domaine en commençant par un BTS SNIR 
+              (Systèmes Numériques Informatiques et Réseaux) où j'ai acquis les bases du développement web, de la programmation orientée objet 
+              et des réseaux. Après l'obtention de mon BTS, j'ai décidé de rejoindre l'école Epitech en Pré MSC-Pro, attiré par leur pédagogie axée
+               sur "Apprendre à Apprendre", où l'apprentissage se fait principalement par la pratique à travers des projets 
+               concrets plutôt que par des cours théoriques.
+
+              Dans le cadre de ce cursus, je suis tenu d'effectuer une alternance, ce qui me permettra d'acquérir de l'expérience 
+              dans le monde professionnel. Ainsi, je suis à la recherche d'une opportunité d'alternance dans le domaine du développement, 
+              et je suis disponible pour commencer dès que possible.  
               </p>
               <button><a href="#footer">Let's talk</a></button>
               <Social>

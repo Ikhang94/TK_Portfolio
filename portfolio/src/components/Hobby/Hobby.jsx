@@ -20,22 +20,29 @@ const Hobby = () => {
                 <Card             
                     Icon={MdGames}
                     title={"Jeux vidéos"}
-                    disc={`Je joue régulièrement à des jeux de stratégies comme Civilisation 6, Europa Universalis 4 ou Total war Warhammer 3`}
+                    resume={`Je joue régulièrement à des jeux de stratégies comme Civilisation 6, Europa Universalis 4 ou Total war Warhammer 3`}
+                    desc={`Les jeux vidéos ont été toujours une source d'attrait particulière pour notamment les jeux de stratégies car elles 
+                    offrent un mélange de captivant d'intelligence, de réflexion et d'adrenaline.`}
+                    img={`hobby/img_games.png`}
                     />  
             </Slide>
             <Slide direction="up">
                 <Card             
                     Icon={GiNinjaHeroicStance}
                     title={"Manga/Anime"}
-                    disc={`J'adore le Japon notamment la façon de vivre de ses habitants mais surtout pour les Mangas/Animes`}
+                    resume={`J'adore le Japon notamment la façon de vivre de ses habitants mais surtout j'adore les Mangas/Animes`}
+                    desc={"babla"}
+                    img={`hobby/anime_hobby.png`}
                     />  
             </Slide>
             <Slide direction="right">
                 <Card             
                     Icon={GiSpellBook }
                     title={"Heroic Fantasy"}
-                    disc={`J'aime beacoup lire de l'heroic Fantasy afin de m'immerger dans un univers rempli d'épée et de magie comme l'univers de 
+                    resume={`J'aime beacoup lire de l'heroic Fantasy afin de m'immerger dans un univers rempli d'épée et de magie comme l'univers de 
                     Tolkien`}
+                    desc={"babla"}
+                    img={`hobby/fantasy_hobby.png`}
                     />  
             </Slide>
             </Cards>

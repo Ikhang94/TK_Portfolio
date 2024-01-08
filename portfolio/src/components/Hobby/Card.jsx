@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import Modal from "react-modal";
 const Card = (props) => {
 
-    const { Icon, disc, title } = props;
+    const { Icon, resume, title, desc, img} = props;
     const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <Container>
       <span className='green'><Icon/></span>
       <h1>{title}</h1>
-      <p>{disc}</p>
+      <p>{resume}</p>
 
           <button onClick={setModalOpen}>Détails</button>
           <Modal
@@ -39,11 +39,11 @@ const Card = (props) => {
             <div className="txt_and_img-container">
 
               <div className="img-container">
-                <img src="source_de_votre_image" alt="Image" />
+                <img src={img} alt="Image" />
               </div>
               <div className="text-container">
                 <p>
-                  Ajoutez ici le contenu supplémentaire que vous souhaitez afficher. Ceci est un exemple de texte. Vous pouvez remplacer cela par votre propre contenu.
+                  {desc}Ajoutez ici le contenu supplémentaire que vous souhaitez afficher. Ceci est un exemple de texte. Vous pouvez remplacer cela par votre propre contenu.
                 </p>
               </div>
             </div>
@@ -109,7 +109,6 @@ const Container = styled.div`
 `
 const ModalContent = styled.div`
   margin: 0 auto;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,8 +147,8 @@ const ModalContent = styled.div`
   }
 
   p {
-    font-size: 0.8rem;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   img {
