@@ -21,8 +21,11 @@ const Hobby = () => {
                     Icon={MdGames}
                     title={"Jeux vidéos"}
                     resume={`Je joue régulièrement à des jeux de stratégies comme Civilisation 6, Europa Universalis 4 ou Total war Warhammer 3`}
-                    desc={`Les jeux vidéos ont été toujours une source d'attrait particulière pour notamment les jeux de stratégies car elles 
-                    offrent un mélange de captivant d'intelligence, de réflexion et d'adrenaline.`}
+                    desc={`Les jeux vidéo ont toujours été une source d'attrait particulière pour moi, notamment les jeux de stratégie, 
+                    car ils offrent un mélange captivant d'intelligence, de réflexion et d'adrénaline. En effet, qu'il s'agisse de la 
+                    gestion d'une civilisation, d'une ville ou d'une armée, ils nécessitent souvent une planification minutieuse, 
+                    une analyse approfondie de la situation et une anticipation des actions à venir afin de faire prospérer sa civilisation, 
+                    sa ville ou de mener son armée à la victoire. Cela implique la mise en place de différentes stratégies avec intelligence.`}
                     img={`hobby/img_games.png`}
                     />  
             </Slide>
