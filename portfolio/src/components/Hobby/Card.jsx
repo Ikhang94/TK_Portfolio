@@ -43,7 +43,7 @@ const Card = (props) => {
               </div>
               <div className="text-container">
                 <p>
-                  {desc}Ajoutez ici le contenu supplémentaire que vous souhaitez afficher. Ceci est un exemple de texte. Vous pouvez remplacer cela par votre propre contenu.
+                  {desc}
                 </p>
               </div>
             </div>
@@ -117,6 +117,10 @@ const ModalContent = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-items: flex-start; /* Aligner les éléments en haut */
+    justify-content: center; /* Centrer horizontalement */
+    gap: 1rem; /* Espacement entre l'image et le texte */
+    margin-bottom: 1rem; /* Espacement en bas */
   }
 
   h2 {
@@ -144,6 +148,7 @@ const ModalContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-content: flex-start;
   }
 
   p {
@@ -186,6 +191,7 @@ const ModalContent = styled.div`
       /* ... (vos styles existants) */
       margin-top: 1rem; /* Réajustez la marge si nécessaire pour l'espacement */
       align-self: center; /* Centrer le bouton sur mobile */
+      position: initial; /* Utilisation de la position absolue */
     }
   }
 `;

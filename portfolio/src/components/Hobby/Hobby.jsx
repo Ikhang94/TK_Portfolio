@@ -34,7 +34,15 @@ const Hobby = () => {
                     Icon={GiNinjaHeroicStance}
                     title={"Manga/Anime"}
                     resume={`J'adore le Japon notamment la façon de vivre de ses habitants mais surtout j'adore les Mangas/Animes`}
-                    desc={"babla"}
+                    desc={`Le Japon, pays fascinant à bien des égards, exerce sur moi une attraction profonde et durable. Parmi ses nombreux 
+                    aspects, la richesse de sa culture populaire, notamment à travers ses mangas et ses animes, m'a particulièrement captivé. 
+                    En effet, ils offrent des récits souvent captivants et très diversifiés, qu'il s'agisse de fantasy, de science-fiction, 
+                    de romance ou de comédie, offrant ainsi une expérience riche et variée. De plus, contrairement à ce que certains pourraient 
+                    penser, les animes et les mangas peuvent également transmettre des valeurs fortes telles que l'importance des relations 
+                    humaines et la persévérance, voire nous amener à réfléchir sur des problèmes de société. 
+                    Nous pouvons également souligner le talent des mangakas qui offrent aux lecteurs des planches de dessin sublimes, 
+                    et celui des studios d'animation qui créent des animations de grande qualité. Dans les deux cas, le spectateur ne peut 
+                    qu'apprécier la magnificence des mangas et des animes à travers ces réalisations visuelles remarquables et uniques.`}
                     img={`hobby/anime_hobby.png`}
                     />  
             </Slide>
@@ -44,7 +52,16 @@ const Hobby = () => {
                     title={"Heroic Fantasy"}
                     resume={`J'aime beacoup lire de l'heroic Fantasy afin de m'immerger dans un univers rempli d'épée et de magie comme l'univers de 
                     Tolkien`}
-                    desc={"babla"}
+                    desc={`L'héroic fantasy est un genre littéraire et artistique qui m'attire et me captive pour plusieurs raisons profondes.
+                    Tout d'abord, l'héroic fantasy offre un monde imaginaire riche en aventures épiques, empreint de magie, 
+                    de créatures fantastiques et de héros légendaires. Ce mélange de merveilleux et de mythologie crée un univers captivant, 
+                    où l'imagination n'a pas de limites. La présence de mondes fantastiques, de royaumes féeriques et de pouvoirs surnaturels 
+                    éveille en moi un sentiment d'émerveillement et d'évasion, offrant une échappatoire hors du quotidien 
+                    vers des contrées extraordinaires. De plus, l'un des aspects les plus attrayants de l'héroic fantasy est la 
+                    construction méticuleuse des mondes imaginaires. Les auteurs de ce genre créent des univers détaillés, des systèmes 
+                    de magie élaborés et des sociétés fantastiques avec leurs propres histoires, cultures et langages. Cette immersion 
+                    dans des univers complexes et détaillés constitue une source infinie de fascination, permettant une exploration sans fin 
+                    des mystères et des possibilités offertes par ces mondes fictifs.`}
                     img={`hobby/fantasy_hobby.png`}
                     />  
             </Slide>
