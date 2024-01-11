@@ -8,22 +8,26 @@ let data = [
     {
         title : "Tower Sheep",
         img : "project/towersheep.jpg",
-        disc : "Jeux tower defense qui a pour but de défendre un mouton des aliens en construisant"
+        disc : "Jeux tower defense qui a pour but de défendre un mouton des aliens en construisant",
+        link :"https://khang.caotek.fr/blog/10/tower-sheep"
     },
     {   
         title : "QCM Dynamique",
         img : "project/carton_plickers.png",
-        disc : "Projet dans laquelle les participants répondent aux QCm à l'aide de carton ressemblent à des QR codes"
+        disc : "Projet dans laquelle les participants répondent aux QCm à l'aide de carton ressemblent à des QR codes",
+        link :"https://khang.caotek.fr/blog/4/qcm-dynamique-inspir%25C3%25A9-de-plickers"
     },
     {   
         title : "JobHunt",
         img : "project/jobhunt.svg",
-        disc : "Site web qui est en fait un Joboard ressemblant à Linkdin, Indeed, Jobhunt..."
+        disc : "Site web qui est en fait un Joboard ressemblant à Linkdin, Indeed, Jobhunt...",
+        link :"https://khang.caotek.fr/blog/11/jobhunt"
     },
     {   
         title : "A Venir",
         img : "project/WIP.jpg",
-        disc : "Projet en cours de création"
+        disc : "Projet en cours de création",
+        link :"#"
     }
 ];
 
@@ -98,8 +102,8 @@ const Container = styled.div`
 
 const Buttons = styled.div`
   button{
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     background-color: rgba(255, 255, 255, 0.100);
     cursor: pointer;
     color: #01be96;

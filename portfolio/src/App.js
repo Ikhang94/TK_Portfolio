@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
@@ -7,25 +8,24 @@ import Hobby from "./components/Hobby/Hobby";
 import Footer from "./components/Footer/Footer";
 import {Fade} from 'react-awesome-reveal';
 
-
 function App() {
   return (
-    <Container>
-      <Banner>
-        <Fade>
-          <Header/>
-          <ProfComponent/>
-        </Fade>
-      </Banner>
-      <Skillset/>
-      <LightColor>
-        <Projects/>
-      </LightColor>
-        <Hobby/>
-      <LightColor>
-        <Footer/>
-      </LightColor>
-    </Container>
+      <Container>
+            <Banner>
+              <Fade>
+                <Header/>
+                <ProfComponent/>
+              </Fade>
+            </Banner>
+            <Skillset/>
+            <LightColor>
+              <Projects/>
+            </LightColor>
+              <Hobby/>
+            <LightColor>
+              <Footer/>
+            </LightColor>
+      </Container>
   );
 }
 
