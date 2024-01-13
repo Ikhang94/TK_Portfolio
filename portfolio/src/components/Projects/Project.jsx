@@ -14,7 +14,11 @@ const Project = (props) => {
               <p>
                 {disc}
               </p>
-              <a href={link} className="project-link">plus de détail</a>
+              
+              <a href={link} className="project-link">
+                <button>Voir plus</button>
+              </a>
+
         </div>
         
     </Container>
@@ -44,9 +48,6 @@ const Container = styled.div`
     text-decoration: none !important;
     outline: none;
     color: #fff;
-    &:hover {
-      color: red; /* Changez la couleur ou ajoutez d'autres styles pour l'effet hover */
-    }
   }
   .disc {
     
@@ -71,6 +72,25 @@ const Container = styled.div`
       font-size: 0.8rem;
 
     }
+
+    button {
+      padding: 0.7rem 1rem;
+      background-color: #01be96;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      a{
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+      }
+      font-weight: 500;
+      filter: drop-shadow(0px 10px 10px #01be9551);
+      &:hover {
+        filter: drop-shadow(0px 10px 10px #01be9570);
+      }
+    }
+
   }
   
   /* styles for smaller screens (mobile) */

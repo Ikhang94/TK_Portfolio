@@ -108,7 +108,7 @@ const Texts = styled.div`
     }
     font-weight: 500;
     filter: drop-shadow(0px 10px 10px #01be9551);
-    :hover {
+    &:hover {
       filter: drop-shadow(0px 10px 10px #01be9570);
     }
   }
