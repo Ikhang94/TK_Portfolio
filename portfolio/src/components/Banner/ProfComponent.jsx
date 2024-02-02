@@ -28,9 +28,9 @@ const ProfComponent = () => {
               dans le monde professionnel. Ainsi, je suis à la recherche d'une opportunité d'alternance dans le domaine du développement, 
               et je suis disponible pour commencer dès que possible.  
               </p>
-              <button><a href="#footer">Let's talk</a></button>
+              <button><a href="#footer">Parlons un peu</a></button>
               <Social>
-                  <p>Check out my</p>
+                  <p>Regarder mes...</p>
                   <div className="social-icons">
                   <span>
                       <a href="https://www.linkedin.com/in/thien-khang-cao/">

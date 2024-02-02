@@ -47,7 +47,7 @@ const Card = (props) => {
                 </p>
               </div>
             </div>
-              <button onClick={() => setModalOpen(false)}>Close Modal</button>
+              <button onClick={() => setModalOpen(false)}>Fermer</button>
             </ModalContent>
           </Modal>
     </Container>
