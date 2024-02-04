@@ -28,7 +28,7 @@ const ProfComponent = () => {
               dans le monde professionnel. Ainsi, je suis à la recherche d'une opportunité d'alternance dans le domaine du développement, 
               et je suis disponible pour commencer dès que possible.  
               </p>
-              <button><a href="#footer">Parlons un peu</a></button>
+              <button><a href="CAO Thien-khang CV Développeur web.pdf">Voir mon CV</a></button>
               <Social>
                   <p>Regarder mes...</p>
                   <div className="social-icons">
@@ -95,7 +95,7 @@ const Texts = styled.div`
   }
 
   button {
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 1rem;
     margin-top: 3rem;
     cursor: pointer;
     background-color: #01be96;

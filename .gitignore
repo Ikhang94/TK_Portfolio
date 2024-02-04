@@ -25,6 +25,3 @@ dist-ssr
 
 #package json
 package-lock.json
-
-#dotenv
-.env

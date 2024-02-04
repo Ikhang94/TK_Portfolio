@@ -84,7 +84,7 @@ const Skillset = () => {
         <Container id="skills">
             <Slide direction="down">
               <h1>
-                My<span className="green"> skills</span>
+                Mes<span className="green"> compétences</span>
               </h1>
             </Slide>
             <div className="skillset">
