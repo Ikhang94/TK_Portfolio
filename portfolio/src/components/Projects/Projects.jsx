@@ -9,7 +9,7 @@ const Projects = () => {
         <Container id="project">
             <Zoom>
                 <h1>Mes <span className="green">Projets</span></h1>
-                <p>Voici tout mes projets que j'ai pu faire durant ma vie dévelopeur</p>
+                <p>Voici tous mes projets que j'ai pu faire durant ma vie dévelopeur</p>
             </Zoom>
             <Slide>
                 <SliderComp/>

@@ -26,7 +26,7 @@ const ProfComponent = () => {
 
               Dans le cadre de ce cursus, je suis tenu d'effectuer une alternance, ce qui me permettra d'acquérir de l'expérience 
               dans le monde professionnel. Ainsi, je suis à la recherche d'une opportunité d'alternance dans le domaine du développement, 
-              et je suis disponible pour commencer dès que possible.  
+              et je suis disponible pour commencer vers Septembre.  
               </p>
               <button><a href="CAO Thien-khang CV Développeur web.pdf">Voir mon CV</a></button>
               <Social>
