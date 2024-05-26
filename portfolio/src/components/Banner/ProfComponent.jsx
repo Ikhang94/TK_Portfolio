@@ -14,13 +14,12 @@ const ProfComponent = () => {
                   Bonjour <span className="green">Je m'appelle</span>
               </h4>
               <h1 className="green">CAO Thien-Khang</h1>
-              <h3>Developpeur Web</h3>
               <p>
               Je suis quelqu'un qui s'est passionné pour l'informatique en raison de son côté créatif. 
               Ce domaine offre de nombreuses possibilités pour créer des sites web, des applications ou des logiciels uniques 
               et différents. C'est pourquoi j'ai choisi de me spécialiser dans ce domaine en commençant par un BTS SNIR 
               (Systèmes Numériques Informatiques et Réseaux) où j'ai acquis les bases du développement web, de la programmation orientée objet 
-              et des réseaux. Après l'obtention de mon BTS, j'ai décidé de rejoindre l'école Epitech en Pré MSC-Pro, attiré par leur pédagogie axée
+              et des réseaux. Après l'obtention de mon BTS, j'ai décidé de rejoindre l'école Epitech en MSC-Pro, attiré par leur pédagogie axée
                sur "Apprendre à Apprendre", où l'apprentissage se fait principalement par la pratique à travers des projets 
                concrets plutôt que par des cours théoriques.
 
@@ -28,7 +27,7 @@ const ProfComponent = () => {
               dans le monde professionnel. Ainsi, je suis à la recherche d'une opportunité d'alternance dans le domaine du développement, 
               et je suis disponible pour commencer vers Septembre.  
               </p>
-              <button><a href="CAO Thien-khang CV Développeur web.pdf">Voir mon CV</a></button>
+              <button><a href="CAO Thien-khang CV Ingénieur Logiciel.pdf">Voir mon CV</a></button>
               <Social>
                   <p>Regarder mes...</p>
                   <div className="social-icons">

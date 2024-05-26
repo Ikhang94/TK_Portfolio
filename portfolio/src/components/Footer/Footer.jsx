@@ -67,13 +67,15 @@ const Footer = () => {
                 <Slide direction='left' delay={1}><h1>Contact</h1></Slide>
                 <div className='address'>
                    <Slide direction='left'><h1>Adresse</h1></Slide>
-                   <Slide direction='left'><p>48 rue Garibaldi, Saint-maur des fossés, 94100</p></Slide>
+                   <Slide direction='left'><p>48 rue Garibaldi</p></Slide>
+                   <Slide direction='left'><p>Saint-maur des fossés</p></Slide>
+                   <Slide direction='left'><p>94100</p></Slide>
                 </div>
                 <div className='links'>
                 <Slide direction='left'><h1>Contactez moi</h1></Slide>
                     <div>
                     <Slide direction='left'><span><FiPhoneCall/></span></Slide>
-                        <Slide direction='left'><a href="tel:+3352233508">+33 52 23 35 08</a></Slide>
+                        <Slide direction='left'><a href="tel:+3352233508">06 52 23 35 08</a></Slide>
                     </div>
                     <div>
                         <span><HiOutlineMailOpen/></span>
