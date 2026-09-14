@@ -6,22 +6,22 @@ import styled from 'styled-components';
 
 let data = [
     {
-        title : "Tower Sheep",
-        img : "project/towersheep.jpg",
-        disc : "Jeux tower defense qui a pour but de défendre un mouton des aliens en construisant",
-        link :"https://khang.caotek.fr/blog/10/tower-sheep"
+        title : "Augmented_Bot_Battle",
+        img : "project/Augmented_Bot_Battle_menu.png",
+        disc : "Jeu de combat qui permet de contrôler un robots et d'afronter à un autre joueur en réalité augmentée",
+        link :"https://github.com/Ikhang94/Augmented-Bot-Battle"
     },
     {   
         title : "QCM Dynamique",
         img : "project/carton_plickers.png",
         disc : "Projet dans laquelle les participants répondent aux QCm à l'aide de carton ressemblent à des QR codes",
-        link :"https://khang.caotek.fr/blog/4/qcm-dynamique-inspir%25C3%25A9-de-plickers"
+        link :"https://github.com/Ikhang94/Projet_QCM_Dynamique"
     },
     {   
-        title : "JobHunt",
-        img : "project/jobhunt.svg",
-        disc : "Site web qui est en fait un Joboard ressemblant à Linkdin, Indeed, Jobhunt...",
-        link :"https://khang.caotek.fr/blog/11/jobhunt"
+        title : "Vivy Bot",
+        img : "project/Bot_Vivy_img.png",
+        disc : "Bot discord qui peut jouer de la musique et les interactions se font via une application web ",
+        link :"https://github.com/Ikhang94/Vivy-Bot"
     },
     {   
         title : "A Venir",

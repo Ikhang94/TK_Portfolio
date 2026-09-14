@@ -46,9 +46,9 @@ body{
 @media(max-width: 990px){
   .center .slick-center .project{
     transform: scale(1);
-
-    .center .project{
+  }
+  .center .project{
     opacity: 1;
     pointer-events: all;
-    }
-  }}
+  }
+}

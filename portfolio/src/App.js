@@ -12,8 +12,12 @@ function App() {
   return (
       <Container>
             <Banner>
+              <HeaderWrapper>
+                <Fade>
+                  <Header/>
+                </Fade>
+              </HeaderWrapper>
               <Fade>
-                <Header/>
                 <ProfComponent/>
               </Fade>
             </Banner>
@@ -32,11 +36,15 @@ function App() {
 export default App;
 
 const Container = styled.div``;
+const HeaderWrapper = styled.div`
+  position: relative;
+  z-index: 10000;
+`;
 const Banner = styled.div`
 background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-height: 100vh
+height: 100vh;
 @media (max-width: 640px) {
-  heigth: 100%;
+  height: 100%;
   padding-bottom: 1rem;
 }
 `;

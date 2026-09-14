@@ -126,7 +126,7 @@ const Container = styled.div`
     position: relative;
     padding: 2rem 0;
     width: 80%;
-    maw-width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

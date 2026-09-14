@@ -54,10 +54,12 @@ const Container = styled.div`
     position: absolute;
     right: 0;
     left: 0;
-    bottom: -10rem;
+    bottom: 0;
+    transform: translateY(101%);
     text-align: left;
-    padding: 1.5rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 8));
     transition: all 400ms ease-in-out;
     display: flex;
     flex-direction: column;
@@ -101,7 +103,7 @@ const Container = styled.div`
       
     }
     .disc {
-      bottom: 0;
+      transform: translateY(0);
     }
   }
 
@@ -110,6 +112,6 @@ const Container = styled.div`
   }
 
   &:hover > .disc {
-    bottom: 0;
+    transform: translateY(0);
   }
 `;
