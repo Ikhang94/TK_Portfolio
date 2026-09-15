@@ -21,8 +21,8 @@ const ProfComponent = () => {
               (Systèmes Numériques Informatiques et Réseaux) où j'ai acquis les bases du développement web, de la programmation orientée objet 
               et des réseaux. Après l'obtention de mon BTS, j'ai décidé de rejoindre l'école Epitech en MSC-Pro, attiré par leur pédagogie axée
                sur "Apprendre à Apprendre", où l'apprentissage se fait principalement par la pratique à travers des projets 
-               concrets plutôt que par des cours théoriques. Dans le cadre de ce cursus, j'ai effectué une alternance de 3 ans qui permet d'acquérir 
-               une expérience dans le monde du travail. Etant donné que mes études et mon alternance se termine vers fin Septembre, je recherche un emploie
+               concrets plutôt que par des cours théoriques. Dans le cadre de ce cursus, j'ai effectué une alternance de 3 ans qui m'a permis d'acquérir 
+               une expérience dans le monde du travail. Etant donné que mes études et mon alternance se terminent vers fin Septembre, je recherche un emploi
                dans le domaine de l'informatique.
               </p>
               <button><a href="CAO Thien-khang CV Ingénieur Logiciel.pdf">Voir mon CV</a></button>
