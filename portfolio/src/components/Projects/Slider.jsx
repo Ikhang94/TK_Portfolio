@@ -8,7 +8,7 @@ let data = [
     {
         title : "Augmented_Bot_Battle",
         img : "project/Augmented_Bot_Battle_menu.png",
-        disc : "Jeu de combat qui permet de contrôler un robot et d'afronter à un autre joueur en réalité augmentée",
+        disc : "Jeu de combat mobile qui permet de contrôler un robot et d'afronter à un autre joueur en réalité augmentée",
         link :"https://github.com/Ikhang94/Augmented-Bot-Battle"
     },
     {   
