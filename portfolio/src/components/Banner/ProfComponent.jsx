@@ -25,7 +25,7 @@ const ProfComponent = () => {
                une expérience dans le monde du travail. Etant donné que mes études et mon alternance se terminent vers fin Septembre, je recherche un emploi
                dans le domaine de l'informatique.
               </p>
-              <button><a href="CAO Thien-khang CV Ingénieur Logiciel.pdf">Voir mon CV</a></button>
+              <button><a href="CAO Thien-khang CV Développeur web.pdf">Voir mon CV</a></button>
               <Social>
                   <p>Regarder mes...</p>
                   <div className="social-icons">
